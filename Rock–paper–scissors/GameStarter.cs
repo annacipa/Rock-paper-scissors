@@ -19,10 +19,9 @@ namespace Rock_paper_scissors
             Console.WriteLine("Type 1 to play,type anyting else  to exit");
             //a point to enter to go in loop if player wants to play again
             Enter:  var line = Console.ReadLine();
-            //convert inputed value from string to int
-            int answer = Convert.ToInt32(line);
+            
             //check the value entered
-            if (answer == 1)
+            if (string.Equals(line,"1"))
                 {
                 //if 1 then we go to the playinh round
 
