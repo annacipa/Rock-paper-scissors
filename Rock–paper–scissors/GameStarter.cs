@@ -11,8 +11,9 @@ namespace Rock_paper_scissors
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the game of Rock Paper Scissors");
+            Console.WriteLine(Environment.NewLine);
             GameBoard newGame = new GameBoard();
-            Console.ReadLine();
+            Console.WriteLine("Thank you for Playing");
         }
     }
 }
