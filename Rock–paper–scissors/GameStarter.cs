@@ -18,23 +18,29 @@ namespace Rock_paper_scissors
             //Instructions for interactivity
             Console.WriteLine("Type 1 to play,type anyting else  to exit");
             //a point to enter to go in loop if player wants to play again
-            Enter:  var line = Console.ReadLine();
-            
-            //check the value entered
-            if (string.Equals(line,"1"))
+            string line = Console.ReadLine();
+
+            do {
+               
+
+                //check the value entered
+                if (string.Equals(line, "1"))
                 {
-                //if 1 then we go to the playinh round
+                    //if 1 then we go to the playing round
 
                     GameBoard newGame = new GameBoard();
-                    Console.WriteLine("Thank you for Playing! Want to Play again?Type 1 to play, Type 2 or any key to exit");
-                //check if user wants to play again 
-                goto Enter;
+                    Console.WriteLine("Thank you for Playing! Want to Play again? Type 1 to play, type 2 or any key to exit");
+                    //read input
+                    line = Console.ReadLine();
+                    //reenter loop
+                     continue;
                 }
-             else
+                else
                 {
                     Console.WriteLine("Game Exited");
 
                 }
+            } while (line!=null );
 
                 Console.WriteLine(Environment.NewLine);
 
