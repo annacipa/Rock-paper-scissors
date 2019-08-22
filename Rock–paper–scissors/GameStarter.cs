@@ -10,7 +10,7 @@ namespace Rock_paper_scissors
         {
             Console.WriteLine("Welcome to the game of Rock Paper Scissors");
             GameBoard newGame = new GameBoard();
-          
+            Console.ReadLine();
         }
     }
 }
