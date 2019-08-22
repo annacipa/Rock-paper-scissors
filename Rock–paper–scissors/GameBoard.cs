@@ -24,6 +24,20 @@ namespace Rock_paper_scissors
           
             ShowResults results = new ShowResults(ResultArray,ties);
 
+            //Ask user if they want detailed info per round of results
+            Console.WriteLine("Do you want detailed info of the outcomes per round? Press 1! Else press anything to exit! ");
+            var line = Console.ReadLine();
+            int answer = Convert.ToInt32(line);
+            //check the value entered
+            if (answer == 1)
+            {
+                ShowResults results2 = new ShowResults();
+                results2.ShowResultsbyRound(ResultArray);
+                Console.WriteLine(Environment.NewLine);
+
+            }
+            
+
         }
 
 

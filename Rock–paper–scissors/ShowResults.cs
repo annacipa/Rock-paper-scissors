@@ -9,7 +9,10 @@ namespace Rock_paper_scissors
     {
         int wins=0, loses=0;
 
+        public ShowResults()
+        {
 
+        }
         public ShowResults(List<Results> resultsToShow, int ties)
         {
 
@@ -27,6 +30,15 @@ namespace Rock_paper_scissors
             Console.WriteLine(Environment.NewLine);
 
 
+        }
+
+        public void ShowResultsbyRound(List<Results> resultsToShow)
+        {
+            for (int i = 0; i < resultsToShow.Count(); i++)
+            {
+                var s = String.Format(" Random value Chosen: {0} | Round : {1} | Winner is  {2} ", resultsToShow[i].what_user_played, resultsToShow[i].round, resultsToShow[i].who_won);
+                Console.WriteLine(s);
+            }
         }
 
 
