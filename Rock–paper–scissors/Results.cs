@@ -12,6 +12,7 @@ namespace Rock_paper_scissors
         public string what_user_played;
         //and who won finally
         public string who_won;
+       
 
         //CONSTRUCTOR with data initialisation
         public Results(string what_he_playd_v, int round_r, string who_won_v)
@@ -23,6 +24,7 @@ namespace Rock_paper_scissors
 
 
         }
+
     }
    
 }

@@ -10,7 +10,7 @@ namespace Rock_paper_scissors
         int wins=0, loses=0;
 
 
-        public ShowResults(List<Results> resultsToShow)
+        public ShowResults(List<Results> resultsToShow, int ties)
         {
 
            
@@ -23,8 +23,9 @@ namespace Rock_paper_scissors
                     wins++;
 
             }
-            Console.Write("In this game there were Wins: {0} & Loses :{1}", wins , loses);
+            Console.Write("In this game there were Wins: {0} & Loses :{1} & Ties: {2} ", wins , loses, ties);
             Console.WriteLine(Environment.NewLine);
+
 
         }
 

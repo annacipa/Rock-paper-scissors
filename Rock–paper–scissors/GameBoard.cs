@@ -9,11 +9,11 @@ namespace Rock_paper_scissors
 {
     public class GameBoard
     {
-        private
-        const int Rounds = 100;
-        private
-        const String RockOfPC = "Rock";
+        private const int Rounds = 100;
+        private const String RockOfPC = "Rock";
         private string[] Values = {"Rock","Scissors","Paper"};
+
+        public int ties = 0;
 
         public List<Results> ResultArray = new List<Results>();
 
@@ -21,7 +21,8 @@ namespace Rock_paper_scissors
         public GameBoard()
         {
             NewGame();
-            ShowResults results = new ShowResults(ResultArray);
+          
+            ShowResults results = new ShowResults(ResultArray,ties);
 
         }
 
@@ -48,7 +49,7 @@ namespace Rock_paper_scissors
                 }                
                 else
                 {
-                    //repeat game with no result saved
+                    this.ties++;
                     i--;
 
                 }
