@@ -30,7 +30,6 @@ namespace Rock_paper_scissors
 
                     GameBoard newGame = new GameBoard();
                     Console.WriteLine("Thank you for Playing! Want to Play again? Type 1 to play, type 2 or any key to exit");
-                    //read input
                     line = Console.ReadLine();
                     //reenter loop
                      continue;
@@ -38,6 +37,7 @@ namespace Rock_paper_scissors
                 else
                 {
                     Console.WriteLine("Game Exited");
+                    break;
 
                 }
             } while (line!=null );
